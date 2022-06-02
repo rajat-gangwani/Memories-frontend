@@ -7,7 +7,6 @@ import { getPostBySearch, getPosts } from '../../actions/posts';
 import { useDispatch } from "react-redux";
 import { useLocation,useNavigate } from 'react-router-dom';
 import ChipInput from 'material-ui-chip-input';
-import { fetchPostBySearch } from '../../api';
 import Paginate from '../Posts/Pagination';
 
 

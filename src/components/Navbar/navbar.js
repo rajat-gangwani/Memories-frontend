@@ -1,6 +1,4 @@
 import React, { useState,useEffect } from "react";
-import memories from "../../images/memories.png";
-
 import memorylogo from "../../images/memories-Logo.png";
 import memorytext from "../../images/memories-Text.png";
 import { AppBar,Toolbar, Avatar, Button, Typography} from '@material-ui/core';
@@ -28,7 +26,7 @@ const Navbar = () => {
     useEffect(()=>{
         const token = user?.token;
         if(token){
-            const decodedtoken = jwt_decode(token)
+            const decodedtoken = jwt_decode(token);
             if(decodedtoken.exp * 1000 < new Date().getTime()) logout()
         }
         //....
